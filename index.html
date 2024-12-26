@@ -3,127 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ciberseguridad y Hacking</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Aptos:wght@400;700&display=swap');
-
-    body {
-      font-family: 'Aptos', sans-serif;
-      background-color: #176487;
-      color: #ffffff;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
-    h1, h2, h3 {
-      color: #ffffff;
-    }
-    a {
-      color: #e0e0e0;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    nav {
-      margin-bottom: 20px;
-    }
-    nav a {
-      margin-right: 15px;
-    }
-    section {
-      margin-bottom: 40px;
-    }
-    .subsection {
-      margin-left: 20px;
-    }
-  </style>
+  <title>RBKNG7</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Entendiendo la tecnología</h1>
-      <p>Aquí haré mis propias explicaciones de manera concisa de lo que vaya aprendiendo</p>
-    </header>
-    <nav>
-      <a href="#rf">RF</a>
-      <a href="#writeups">Writeups</a>
-      <a href="#redes">Redes</a>
-      <a href="#owasp">OWASP</a>
-      <a href="#tecnicas">Técnicas</a>
-      <a href="#infraestructura">Infraestructura</a>
-    </nav>
-
-    <main>
-      <section id="rf">
-        <h2>RF</h2>
-        <p>Recursos y guías sobre hacking relacionado con frecuencias de radio.</p>
-      </section>
-
-      <section id="writeups">
-        <h2>Writeups</h2>
-        <div class="subsection">
-          <h3><a href="htb.html" target="_blank">HTB</a></h3>
-          <p>Writeups de máquinas de Hack The Box.</p>
-        </div>
-        <div class="subsection">
-          <h3><a href="thm.html" target="_blank">THM</a></h3>
-          <p>Writeups de retos de TryHackMe.</p>
-        </div>
-      </section>
-
-      <section id="redes">
-        <h2>Redes</h2>
-        <p>Artículos y técnicas sobre redes y su seguridad.</p>
-      </section>
-
-      <section id="owasp">
-        <h2>OWASP</h2>
-        <p>Recursos y proyectos relacionados con el top 10 de OWASP y otros estándares.</p>
-      </section>
-
-      <section id="tecnicas">
-        <h2>Técnicas</h2>
-        <p>Exploración de técnicas avanzadas de hacking.</p>
-      </section>
-
-      <section id="infraestructura">
-        <h2>Infraestructura</h2>
-        <div class="subsection">
-          <h3><a href="docker.html" target="_blank">Docker</a></h3>
-          <p>Uso de Docker en entornos de hacking.</p>
-        </div>
-        <div class="subsection">
-          <h3><a href="lxc.html" target="_blank">LXC</a></h3>
-          <p>Contenedores LXC y su aplicación en seguridad.</p>
-        </div>
-        <div class="subsection">
-          <h3><a href="openstack.html" target="_blank">OpenStack</a></h3>
-          <p>Implementación y seguridad en entornos OpenStack.</p>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <p>&copy; 2024 - Ciberseguridad y Hacking</p>
-    </footer>
+  <div>
+    <h1>RBKNG7</h1>
+    <h3>Aquí escribo mis notas personales de manera concisa de lo que voy aprendiendo</h3>
+    <ul class="sections">
+      <li><a href="rf/index.html">RF 📡</a></li>
+      <li><a href="infraestructura/index.html">Infraestructura 🖥👨‍💻</a></li>
+    </ul>
   </div>
-    <div class="mouse-coordinates" id="mouse-coordinates">
-    X: 0<br>
-    Y: 0
-  </div>
-
-  <script>
-    // Actualiza las coordenadas del ratón en tiempo real
-    document.addEventListener("mousemove", (event) => {
-      const coordinates = document.getElementById("mouse-coordinates");
-      coordinates.innerHTML = `X: ${event.clientX}<br>Y: ${event.clientY}`;
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
