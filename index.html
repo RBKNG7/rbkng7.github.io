@@ -47,8 +47,8 @@
 <body>
   <div class="container">
     <header>
-      <h1>Ciberseguridad y Hacking</h1>
-      <p>Explora diversos temas de hacking y seguridad informática.</p>
+      <h1>Entendiendo la tecnología</h1>
+      <p>Aquí haré mis propias explicaciones de manera concisa de lo que vaya aprendiendo</p>
     </header>
     <nav>
       <a href="#rf">RF</a>
@@ -113,5 +113,17 @@
       <p>&copy; 2024 - Ciberseguridad y Hacking</p>
     </footer>
   </div>
+    <div class="mouse-coordinates" id="mouse-coordinates">
+    X: 0<br>
+    Y: 0
+  </div>
+
+  <script>
+    // Actualiza las coordenadas del ratón en tiempo real
+    document.addEventListener("mousemove", (event) => {
+      const coordinates = document.getElementById("mouse-coordinates");
+      coordinates.innerHTML = `X: ${event.clientX}<br>Y: ${event.clientY}`;
+    });
+  </script>
 </body>
 </html>
