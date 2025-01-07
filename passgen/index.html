@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Contraseñas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    
+    <div class="container">
+        <h1>Generador de Contraseñas</h1>
+        <div class="input-container">
+            <label for="password-length">Número de caracteres:</label>
+            <input type="number" id="password-length" min="8" placeholder="Min: 8; Max: 64">
+            <button id="generate">Generar contraseña</button>
+        </div>
+        <div class="output-container">
+            <label for="generated-password">Contraseña generada:</label>
+            <div class="password-display">
+                <input type="text" id="generated-password" readonly>
+                <button id="copy-button">Copiar</button>
+            </div>
+        </div>        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
